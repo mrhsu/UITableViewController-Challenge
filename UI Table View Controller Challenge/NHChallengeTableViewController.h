@@ -1,5 +1,5 @@
 //
-//  NHViewController.h
+//  NHChallengeTableViewController.h
 //  UI Table View Controller Challenge
 //
 //  Created by mrhsu on 5/10/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NHViewController : UIViewController
+@interface NHChallengeTableViewController : UITableViewController
 
 @end
