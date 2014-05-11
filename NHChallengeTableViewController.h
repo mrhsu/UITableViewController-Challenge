@@ -2,7 +2,7 @@
 //  NHChallengeTableViewController.h
 //  UI Table View Controller Challenge
 //
-//  Created by mrhsu on 5/10/14.
+//  Created by mrhsu on 5/11/14.
 //  Copyright (c) 2014 Jibberish. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  NHChallengeTableViewController.m
 //  UI Table View Controller Challenge
 //
-//  Created by mrhsu on 5/10/14.
+//  Created by mrhsu on 5/11/14.
 //  Copyright (c) 2014 Jibberish. All rights reserved.
 //
 
@@ -46,29 +46,61 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 3;
+    if (section == 0) {
+        return 2;
+    }
+    
+    else if (section == 1) {
+        return 1;
+    }
+    
+    else {
+        return 3;
+    }
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
     
-    cell.textLabel.text = @"My first tableview";
+    
+    if (indexPath.section == 0) {
+        cell.textLabel.text = [NSString stringWithFormat:@"I am in section 0"];
+    }
+    
+    else if (indexPath.section == 1) {
+        cell.textLabel.text = [NSString stringWithFormat:@"another section"];
+    }
+    
+    else {
+    cell.textLabel.text = [NSString stringWithFormat:@" Cell Row %i", indexPath.row];
+    
+    }
+    
+    
+    if (indexPath.section == 0) {
+        cell.textLabel.textColor = [UIColor redColor];
+    }
+    else if (indexPath.section == 1){
+        cell.textLabel.textColor = [UIColor blueColor];
+    }
+    else {
+        cell.textLabel.textColor = [UIColor yellowColor];
+    }
     
     return cell;
 }
-
 
 /*
 // Override to support conditional editing of the table view.

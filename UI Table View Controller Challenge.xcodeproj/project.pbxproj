@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F420D2D3191FE7DB004D74D8 /* NHChallengeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F420D2D2191FE7DA004D74D8 /* NHChallengeTableViewController.m */; };
 		F47901EB191ED79300C36F81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47901EA191ED79300C36F81 /* Foundation.framework */; };
 		F47901ED191ED79300C36F81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47901EC191ED79300C36F81 /* CoreGraphics.framework */; };
 		F47901EF191ED79300C36F81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47901EE191ED79300C36F81 /* UIKit.framework */; };
@@ -20,7 +21,6 @@
 		F479020C191ED79300C36F81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47901EE191ED79300C36F81 /* UIKit.framework */; };
 		F4790214191ED79300C36F81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4790212191ED79300C36F81 /* InfoPlist.strings */; };
 		F4790216191ED79300C36F81 /* UI_Table_View_Controller_ChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790215191ED79300C36F81 /* UI_Table_View_Controller_ChallengeTests.m */; };
-		F4790221191ED9E300C36F81 /* NHChallengeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790220191ED9E300C36F81 /* NHChallengeTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F420D2D1191FE7DA004D74D8 /* NHChallengeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NHChallengeTableViewController.h; path = ../NHChallengeTableViewController.h; sourceTree = "<group>"; };
+		F420D2D2191FE7DA004D74D8 /* NHChallengeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NHChallengeTableViewController.m; path = ../NHChallengeTableViewController.m; sourceTree = "<group>"; };
 		F47901E7191ED79300C36F81 /* UI Table View Controller Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI Table View Controller Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47901EA191ED79300C36F81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F47901EC191ED79300C36F81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,8 +53,6 @@
 		F4790211191ED79300C36F81 /* UI Table View Controller ChallengeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UI Table View Controller ChallengeTests-Info.plist"; sourceTree = "<group>"; };
 		F4790213191ED79300C36F81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F4790215191ED79300C36F81 /* UI_Table_View_Controller_ChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UI_Table_View_Controller_ChallengeTests.m; sourceTree = "<group>"; };
-		F479021F191ED9E300C36F81 /* NHChallengeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHChallengeTableViewController.h; sourceTree = "<group>"; };
-		F4790220191ED9E300C36F81 /* NHChallengeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHChallengeTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +115,8 @@
 				F47901F9191ED79300C36F81 /* NHAppDelegate.h */,
 				F47901FA191ED79300C36F81 /* NHAppDelegate.m */,
 				F47901FC191ED79300C36F81 /* Main.storyboard */,
-				F479021F191ED9E300C36F81 /* NHChallengeTableViewController.h */,
-				F4790220191ED9E300C36F81 /* NHChallengeTableViewController.m */,
+				F420D2D1191FE7DA004D74D8 /* NHChallengeTableViewController.h */,
+				F420D2D2191FE7DA004D74D8 /* NHChallengeTableViewController.m */,
 				F4790202191ED79300C36F81 /* Images.xcassets */,
 				F47901F1191ED79300C36F81 /* Supporting Files */,
 			);
@@ -250,7 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4790221191ED9E300C36F81 /* NHChallengeTableViewController.m in Sources */,
+				F420D2D3191FE7DB004D74D8 /* NHChallengeTableViewController.m in Sources */,
 				F47901FB191ED79300C36F81 /* NHAppDelegate.m in Sources */,
 				F47901F7191ED79300C36F81 /* main.m in Sources */,
 			);
@@ -457,6 +457,7 @@
 				F479021B191ED79300C36F81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F479021C191ED79300C36F81 /* Build configuration list for PBXNativeTarget "UI Table View Controller ChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +466,7 @@
 				F479021E191ED79300C36F81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
